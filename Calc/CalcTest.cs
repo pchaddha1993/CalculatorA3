@@ -102,6 +102,27 @@ namespace Calc
             double res = Calculator.Division(a, b);//act
             Assert.AreEqual(res, 5); //assert
         }
+        [Test]
+        public void New_Testcase1_Division()
+        {
+            double a = 1, b = 3;//arrange
+            double res = Calculator.Division(a, b);//act
+            Assert.AreEqual(res, 0.33); //assert
+        }
+        [Test]
+        public void New_Testcase2_Division()
+        {
+            double a = 2, b = 1;//arrange
+            double res = Calculator.Division(a, b);//act
+            Assert.AreEqual(res, 2); //assert
+        }
+        [Test]
+        public void New_Testcase3_Division()
+        {
+            double a = 9, b = 3;//arrange
+            double res = Calculator.Division(a, b);//act
+            Assert.AreEqual(res, 3); //assert
+        }
     }
 }
 
